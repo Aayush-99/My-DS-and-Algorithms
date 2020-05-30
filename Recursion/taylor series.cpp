@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int e(int x, int n){
-	static int p=1, f=1;
-	int r;
+double e(int x, int n){
+	static double p=1, f=1;
+	double r;
 	if(n==0){
 		return 1;
 	}
@@ -16,6 +16,6 @@ int e(int x, int n){
 }
 
 int main(){
-	cout<<e(2,3)<<endl;
+	printf("%lf \n", e(1,10));
 	return 0;
 }
